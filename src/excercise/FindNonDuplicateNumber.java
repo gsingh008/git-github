@@ -1,4 +1,4 @@
-package excercise;
+package excercises;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -8,7 +8,7 @@ import java.util.Set;
 public class FindNonDuplicateNumber {
 
     public static void main(String[] args) {
-        int[] number = { 1, 2, 2, 4, 3, 5, 2, 1, 1, 2 };
+        int[] number = { 2, 2, 1 };
         // Solution-1st not working need to work on it
         int j = findNumber(number);
 
@@ -22,17 +22,26 @@ public class FindNonDuplicateNumber {
         // Solution-3rd
         // using hashmap-working but there is a bug in the count of value when it is not uniq
         // need to fix it
+
+        /*
+         * Leet code accepted this and commented:- Runtime: 9 ms, faster than 17.96% of Java online submissions for Single Number. Memory Usage: 40 MB, less than 96.30% of Java online submissions for
+         * Single Number.
+         */
+
+        System.out.println("Solution-3rd");
         int l = findNumberUsingHashMap(number);
         System.out.println(l);
 
     }
 
+    // 2 2 1 1
     private static int findNumberUsingHashMap(int[] number) {
         Map<Integer, Integer> findUniqKey = new HashMap<>();
         int value = 1;
+        int firstValue = 1;
         for (int i : number) {
             if (!findUniqKey.containsKey(i)) {
-                findUniqKey.put(i, value);
+                findUniqKey.put(i, firstValue);
             } else {
                 findUniqKey.put(i, ++value);
             }
