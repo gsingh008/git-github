@@ -24,8 +24,9 @@ public class FindNonDuplicateNumber {
         // need to fix it
 
         /*
-         * Leet code accepted this and commented:- Runtime: 9 ms, faster than 17.96% of Java online submissions for Single Number. Memory Usage: 40 MB, less than 96.30% of Java online submissions for
-         * Single Number.
+         * Leet code accepted this and commented:- Runtime: 9 ms, faster than 17.96% of Java online 
+         * submissions for Single Number. Memory Usage: 40 MB, less than 96.30% of Java online 
+         * submissions for Single Number.
          */
 
         System.out.println("Solution-3rd");
