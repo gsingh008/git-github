@@ -31,7 +31,7 @@ Algo:-
 /*/
 public class MissingNumberFromSequence {
     public static void main(String[] args) {
-	int[] nums = { 0, 1, 3 };
+	int[] nums = { 0, 1, 2, 2, 4 };
 	/*
 	 * int[] nums = { 45, 35, 38, 13, 12, 23, 48, 15, 44, 21, 43, 26, 6, 37, 1, 19,
 	 * 22, 3, 11, 32, 4, 16, 28, 49, 29, 36, 33, 8, 9, 39, 46, 17, 41, 7, 2, 5, 27,
@@ -47,10 +47,10 @@ public class MissingNumberFromSequence {
 	// nums.length + 1 (+1 because in case of { 0, 1, 3 },numberMap.get(nums[i])
 	// numberMap.get(3) will give NPE because Hashmap will be length 3 to avoid that
 	// we have created 1 extra value.
-	for (int i = 0; i < nums.length + 1; i++) {
+	for (int i = 0; i <= nums.length + 1; i++) {
 	    numberMap.put(i, i);
 	}
-	for (int i = 0; i < nums.length; i++) {
+	for (int i = 0; i <= nums.length; i++) {
 	    if (i != numberMap.get(nums[i]))
 		return i;
 	}
