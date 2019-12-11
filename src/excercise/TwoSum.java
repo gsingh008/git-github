@@ -66,7 +66,7 @@ public class TwoSum {
 	return null;
     }
 
-    // from leet code...same concept of brute forxe but in less lines
+    // from leet code...same concept of brute force but in less lines
     public static int[] twoSum_II(int target, int[] nums) {
 	for (int i = 0; i < nums.length; i++) {
 	    for (int j = i + 1; j < nums.length; j++) {
