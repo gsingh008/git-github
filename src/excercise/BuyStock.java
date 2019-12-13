@@ -6,15 +6,15 @@ Memory Usage: 38.9 MB, less than 28.76% of Java online submissions for Best Time
 
 public class BuyStock {
     public static void main(String[] args) {
-	int[] prices = { 7, 5, 3, 6, 4, 1 };
-	// int[] prices = { 2, 7, 1, 11, 4 };
+	// int[] prices = { 7, 5, 3, 6, 4, 1 };
+	int[] prices = { 2, 7, 1, 11, 4 };
 
 	// Solution-1 o(n2) with 2 loops
 	System.out.println(maxProfit(prices));
 
 	// Solution-1 o(n) with 1 loop only
 	System.out.println(maxProfit_temp(prices));
-
+	int[] price = { 7, 6, 4, 3, 1 };
     }
 
     private static int maxProfit(int[] prices) {
